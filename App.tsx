@@ -1,20 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from 'react-native';
+import { DrawerLayoutAndroidComponent } from './components/DrawerLayoutAndroidComponent';
+import FlatListComponent from './components/FlatListComponent';
+import { ScrollViewComponent } from './components/ScrollViewComponent';
+import { ToastComponent } from './components/ToastComponent';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+    <StatusBar/>
+    {/* <DrawerLayoutAndroidComponent/> */}
+    {/* <ToastComponent/> */}
+    {/* <ScrollViewComponent/> */}
+    <FlatListComponent/>
+    </>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
